@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 int main(void) {
 /*
     char str1[20] = "Hello ";
@@ -17,7 +18,7 @@ int main(void) {
     printf ("%d\n", strcmp(str1, str2));
     printf ("%d\n", strcmp(str1, str3));
 */
-
+/*
     char str1[30] = 0;
     char str2[25];
     
@@ -33,4 +34,32 @@ int main(void) {
     scanf("%c\n", str2);
 
     printf("%c\n" strlen(str1));
+*/
+
+    //int idade = 43;
+    //printf("%d", idade);
+    //printf("\n%p", &idade);
+    //int* ptr = &idade;
+    //printf("%d\n", idade);
+    //printf("%p\n", &idade);
+    //printf("%p\n", ptr);
+
+    //int x = 5, y = 7, z = 0;
+    //z = x * y;
+    //int* p = NULL;
+    //p = &z;
+    //printf("\n%i", z);
+    //printf("\n%p", &z);
+    //printf("\n%p", p);
+
+    //int idade = 41;
+    //int*  ptr = &idade;
+    //printf("%p\n", ptr);
+    //printf("%d\n", *ptr);
+    //printf("%d", idade);
+
+    int arr[8] = {10, 20, 30, 40, 50, 60, 70, 80};
+    for (int i = 0; i < 8; i++) {
+        printf("%p\n", &arr[i]);
+    }
 }
